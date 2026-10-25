@@ -1,0 +1,5 @@
+﻿[
+  {"firstName":"John","lastName":"Doe","postalCode":"12345","username":"standard_user","password":"secret_sauce"},
+  {"firstName":"Jane","lastName":"Swain","postalCode":"67890","username":"standard_user","password":"secret_sauce"},
+  {"firstName":"Alice","lastName":"Johnson","postalCode":"54321","username":"performance_glitch_user","password":"secret_sauce"}
+]
