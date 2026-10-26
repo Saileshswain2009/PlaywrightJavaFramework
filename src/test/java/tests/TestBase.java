@@ -30,7 +30,8 @@ public class TestBase {
         } else if ("webkit".equalsIgnoreCase(browserName)) {
             browser = playwright.webkit().launch();
         } else if ("chrome".equalsIgnoreCase(browserName)) {
-            browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(Arrays.asList("--start-maximized")));
+            //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(Arrays.asList("--start-maximized")));
+            browser = playwright.chromium().launch();
         } else {
             throw new RuntimeException("Unsupported Browser : " + browserName);
         }
