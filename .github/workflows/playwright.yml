@@ -5,25 +5,25 @@ on:
   pull_request:
     branches: [ main, master ]
 
-    workflow_dispatch:
-      inputs:
-        browser:
-          description: 'Browser to run tests on'
-          required: true
-          default: 'firefox'
-          type: choice
-          options:
-            - chrome
-            - firefox
-            - webkit
-          environment:
-              description: 'Environment to run tests on'
-              required: true
-              default: 'dev'
-              type: choice
-              options:
-                - qa
-                - prod
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Browser to run tests on'
+        required: true
+        default: 'firefox'
+        type: choice
+        options:
+          - chrome
+          - firefox
+          - webkit
+      environment:
+        description: 'Environment to run tests on'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - qa
+          - prod
 
 jobs:
   test:
